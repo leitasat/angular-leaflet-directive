@@ -39,7 +39,7 @@ angular.module('leaflet-directive', []).directive('leaflet', ["$q", "leafletData
     restrict: 'EA',
     replace: true,
     scope: {
-      center: '=',
+      //center: '=',
       lfCenter: '=',
       defaults: '=',
       maxbounds: '=',
@@ -3362,7 +3362,7 @@ angular.module('leaflet-directive').directive('bounds', ["$log", "$timeout", "$h
   };
 }]);
 
-var centerDirectiveTypes = ['center', 'lfCenter'];
+var centerDirectiveTypes = [/*'center', */'lfCenter'];
 var centerDirectives = {};
 
 centerDirectiveTypes.forEach(function(directiveName) {
